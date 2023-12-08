@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+
+    <section>
+        <p id="description">Please take a moment to provide your feedback by answering the following survey questions.</p>
+
+        <form id="survey-form" action="#" method="post">
+
+            <label for="name" id="name-label">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Your Age:</label>
+            <input type="number" id="number" name="number" placeholder="Enter your age" min="18" max="99" required>
+
+            <label for="dropdown">Select your occupation:</label>
+            <select id="dropdown" name="occupation">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <fieldset>
+                <legend>How satisfied are you with our services?</legend>
+                <label for="satisfaction-very-satisfied">
+                    <input type="radio" id="satisfaction-very-satisfied" name="satisfaction" value="very-satisfied">
+                    Very Satisfied
+                </label>
+
+                <label for="satisfaction-satisfied">
+                    <input type="radio" id="satisfaction-satisfied" name="satisfaction" value="satisfied">
+                    Satisfied
+                </label>
+
+                <label for="satisfaction-neutral">
+                    <input type="radio" id="satisfaction-neutral" name="satisfaction" value="neutral">
+                    Neutral
+                </label>
+
+                <label for="satisfaction-unsatisfied">
+                    <input type="radio" id="satisfaction-unsatisfied" name="satisfaction" value="unsatisfied">
+                    Unsatisfied
+                </label>
+
+                <label for="satisfaction-very-unsatisfied">
+                    <input type="radio" id="satisfaction-very-unsatisfied" name="satisfaction" value="very-unsatisfied">
+                    Very Unsatisfied
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features do you find most valuable?</legend>
+                <label for="feature-speed">
+                    <input type="checkbox" id="feature-speed" name="feature-options" value="speed">
+                    Speed
+                </label>
+
+                <label for="feature-usability">
+                    <input type="checkbox" id="feature-usability" name="feature-options" value="usability">
+                    Usability
+                </label>
+
+                <label for="feature-functionality">
+                    <input type="checkbox" id="feature-functionality" name="feature-options" value="functionality">
+                    Functionality
+                </label>
+            </fieldset>
+
+            <label for="comments">Any additional comments or suggestions:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
